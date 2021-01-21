@@ -1,0 +1,21 @@
+<h2>Log in</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), wrapper: :input_group) do |f| %>
+    
+    <%= f.error_notification %>
+
+    <%= f.input :email,
+                required: false,
+                autofocus: true,
+                input_html: { autocomplete: "email" },
+                prepend: "example-",
+                append: "@gmail.com" %>
+    <%= f.input :password,
+                required: false,
+                input_html: { autocomplete: "current-password" }, 
+                append: "🙊" %>
+    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+
+    <%= f.button :submit, "Log in", class: "btn-primary" %>
+
+<% end %>

@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
-  
+
   authenticated :user do
     root to: 'home#index', as: :authenticated_root
   end
