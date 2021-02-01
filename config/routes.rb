@@ -1,3 +1,6 @@
+require "nested_form/engine"
+require "nested_form/builder_mixin"
+
 Rails.application.routes.draw do
   resources :tracers
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
