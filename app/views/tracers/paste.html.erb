@@ -1,0 +1,332 @@
+<tr>
+    <td class="h">f17</td>
+    <td valign="top">
+        Pada saat lulus, pada tingkat mana kompetensi di bawah ini anda kuasai? (<b>A</b>)
+        <br> Pada saat ini, pada tingkat mana kompetensi di bawah ini diperlukan dalam pekerjaan? (<b>B</b>)
+    </td>
+</tr>
+
+<tr>
+    <td valign="top" colspan="4">
+        <table class="table table-striped table-responsive">
+            <tbody>
+                <tr>
+                    <th colspan="5" style="align:center;">A</th>
+                    <th>&nbsp;</th>
+                    <th colspan="5">B</th>
+                </tr>
+                <tr>
+                    <th colspan>Sangat Rendah</th>
+                    <th>&nbsp;</th>
+                    <th colspan>Sangat Tinggi</th>
+                    <th>&nbsp;</th>
+                    <th colspan>Sangat Rendah</th>
+                    <th>&nbsp;</th>
+                    <th colspan>Sangat Tinggi</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>&nbsp;
+                    </th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Pengetahuan di bidang atau disiplin ilmu anda <span class="hl">f17-1 f17-2b</span></td>
+                    <%= f.collection_radio_buttons( :f1702b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1703, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                        <input type="radio" name="f1703" value="5">
+                    </td>
+                    <td>Pengetahuan di luar bidang atau disiplin ilmu anda <span class="hl">f17-3 f17-4b</span></td>
+                    <%= f.collection_radio_buttons( :f1704b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1705, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Pengetahuan umum <span class="hl">f17-5 f17-6b</span></td>
+                    <%= f.collection_radio_buttons( :f1706b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1705a, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <%= f.collection_radio_buttons( :f1706ba, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1707, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Ketrampilan internet <span class="hl">f17-7 f17-8b</span> </td>
+                    <%= f.collection_radio_buttons( :f178b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1709, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <%= f.collection_radio_buttons( :f1710b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1711, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <%= f.collection_radio_buttons( :f1712b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1713, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Ketrampilan riset <span class="hl">f17-13 f17-14b</span> </td>
+                    <%= f.collection_radio_buttons( :f1714b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1715, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kemampuan belajar <span class="hl">f17-15 f17-16b</span></td>
+                    <%= f.collection_radio_buttons( :f1716b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1717, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kemampuan berkomunikasi <span class="hl">f17-17 f17-18b</span></td>
+                    <%= f.collection_radio_buttons( :f1718b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1719, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Bekerja di bawah tekanan <span class="hl">f17-19 f17-20b</span></td>
+                    <%= f.collection_radio_buttons( :f1720b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1721, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Manajemen waktu <span class="hl">f17-21 f17-22b</span></td>
+                    <%= f.collection_radio_buttons( :f1722b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                   <%= f.collection_radio_buttons( :f1723, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Bekerja secara mandiri <span class="hl">f17-23 f17-24b</span></td>
+                    <%= f.collection_radio_buttons( :f1724b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1725, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Bekerja dalam tim/bekerjasama dengan orang lain <span class="hl">f17-25 f17-26b</span></td>
+                    <%= f.collection_radio_buttons( :f1726b, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kemampuan dalam memecahkan masalah <span class="hl">f17-27 f17-28b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Negosiasi <span class="hl">f17-29 f17-30b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kemampuan analisis <span class="hl">f17-31 f17-32b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Toleransi <span class="hl">f17-33 f17-34b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kemampuan adaptasi <span class="hl">f17-35 f17-36b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Loyalitas<span class="hl">f17-37 f17-38b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Integritas <span class="hl">f17-37A f17-38ba</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Bekerja dengan orang yang berbeda budaya maupun latar belakang <span class="hl">f17-39 f17-40b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kepemimpinan <span class="hl">f17-41 f17-42b</span></td>
+                    <<%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kemampuan dalam memegang tanggungjawab <span class="hl">f17-43 f17-44b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Inisiatif <span class="hl">f17-45 f17-46b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Manajemen proyek/program <span class="hl">f17-47 f17-48b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kemampuan untuk memresentasikan ide/produk/laporan <span class="hl">f17-49 f17-50b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>mampuan dalam menulis laporan, memo dan dokumen <span class="hl">f17-51 f17-52b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+                <tr>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                    <td>Kemampuan untuk terus belajar sepanjang hayat <span class="hl">f17-53 f17-54b</span></td>
+                    <%= f.collection_radio_buttons( :f1701, [[1, ''], [2, ''], [3, ''], [4, ''], [5, '']], :first, :last, item_wrapper_tag: :td) do |b| %>
+                        <%= b.radio_button %>
+                    <% end %>
+                </tr>
+                
+            </tbody>
+        </table>
+    
+    </td>
+</tr>

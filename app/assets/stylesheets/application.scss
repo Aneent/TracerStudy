@@ -1,5 +1,13 @@
 $theme-colors: ( "bootstrap": #563d7c, "simpleform": #00617f );
+
+.breadcrumb {
+    background: #e85700;
+}
+
 @import "bootstrap";
+
+// cusitm
+@import "custom/neon.scss";
 
 // App sections
 @import "application/breadcrumb";
@@ -18,5 +26,7 @@ $theme-colors: ( "bootstrap": #563d7c, "simpleform": #00617f );
 
 // simple_form helpers
 @import "simple_form-bootstrap/simple_form-bootstrap";
-$theme-colors: ( "bootstrap": #563d7c, "simpleform": #00617f );
-@import "bootstrap";
+
+//font
+@import "font-awesome-sprockets";
+@import "font-awesome";

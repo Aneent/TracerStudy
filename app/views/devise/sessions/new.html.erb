@@ -1,21 +1,74 @@
-<h2>Log in</h2>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), wrapper: :input_group) do |f| %>
     
-    <%= f.error_notification %>
+    
 
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" },
-                prepend: "example-",
-                append: "@gmail.com" %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" }, 
-                append: "🙊" %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    
+    
+    
 
-    <%= f.button :submit, "Log in", class: "btn-primary" %>
+    
 
-<% end %>
+
+
+<div id="content">
+	<section class="breadcrumb text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Login</h1>
+                    <div class="breadcrumbs text-white">
+                        <a href="/index.php">Home</a> » <span>Login</span>
+                    </div><!-- breadcrumbs -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">           
+            <div class="row">               
+                <div class="col-sm-7">                 
+                    <p>Silahkan login pada form dibawah ini untuk dapat mengakses data</p>
+
+                    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), wrapper: :input_group) do |f| %>
+                    <%= f.error_notification %>
+                    <div class="form-group">                   
+                        <div >
+                            <div class="input-group-addon">
+                                <i class="entypo-user"></i>
+                            </div>
+                             <%= f.input :email,
+                                        required: false,
+                                        autofocus: true,
+                                        input_html: { autocomplete: "email" },
+                                        prepend: "example-",
+                                        append: "@gmail.com",
+                                        class:"form-control" %>                                
+                        </div>                       
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div >
+                            <div class="input-group-addon">
+                                <i class="entypo-key"></i>
+                            </div>   
+                            <%= f.input :password,
+                                        required: false,
+                                        input_html: { autocomplete: "current-password" }, 
+                                        append: "🙊",
+                                        class:"form-control"%>           
+                        </div>    
+                    </div>
+                    <div class="form-group">
+                            <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+                    </div> <br>
+                    <%= f.button :submit, "Log in", class: "btn btn-primary btn-block btn-login" %>
+                    <i class="entypo-login"></i>            
+                <% end %>
+                </div>          
+                <div class="col-sm-5">     
+                    <p>Apabila anda mengalami kesulitan dalam login, silahkan hubungi Administrator Tracer Study.</p>
+                </div>              
+            </div>      
+        </div>
+    </section>
+</div>

@@ -6,13 +6,25 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    <style type='text/css'>
+			.h {font-weight : bold ; vertical-align: top; color:red }
+			.hl {font-size: 8px; font-weight : bold ; vertical-align: top; color:red }
+			.i {font-weight : bold ; vertical-align: top; }
+			.desc { display: none; }
+		</style>
   </head>
 
   <body>
+    <!-- header -->
     <%= render 'layouts/header' %>
-    <div id="content">
+    <div class="">
+
     <%= yield %>
-    <%= javascript_include_tag 'application' %>
+    </div>
+    <!--footer-->
+    <%= render 'layouts/footer' %>
+  
   </body>
 </html>

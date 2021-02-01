@@ -1,0 +1,49 @@
+<section id="main" data-layout="layout-1">
+    <section id="content">
+        <div class="container">		
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header bgm-indigo">
+                        <h2>Quesioner Tracer Study
+                        <ul class="actions actions-alt">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#info">
+                                    <i class="zmdi zmdi-help"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <div id="content">
+                            <div class="post">
+
+                            <%= render 'form', tracer: @tracer %>
+
+                            <%= link_to 'Back', tracers_path %>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!--modal document-->
+            <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" id="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="rue">×</span></button>
+                                <h4 class="modal-title">Apa Itu Tracer Study?</h4>
+                            </div>
+                            <div class="modal-body card-padding">
+                            Tracer Study merupakan salah satu metode yang digunakan oleh beberapa perguruan tinggi, khususnya di Indonesia untuk memperoleh umpan balik dari alumni. Umpan balik yang diperoleh dari alumni ini dibutuhkan oleh perguruan tinggi dalam usahanya untuk perbaikan serta pengembangan kualitas dan sistem pendidikan. Umpan balik inipun dapat bermanfaat pula bagi perguruan tinggi untuk memetakan dunia usaha dan industri agar jeda diantara kompetensi yang diperoleh alumni saat kuliah dengan tuntutan dunia kerja dapat diperkecil.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

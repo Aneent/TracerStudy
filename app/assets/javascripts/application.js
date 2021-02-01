@@ -15,6 +15,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
+//= require bootstrap-sprockets
 
 // custom
 //= require bootstrap_static_form_validation
@@ -22,3 +23,5 @@
 //= require password_controller
 //= require toggle_controller
 //= require tooltip_controller
+//= require chartkick
+//= require Chart.bundle

@@ -1,0 +1,525 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tracers</h1>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F21</th>
+      <th>F22</th>
+      <th>F23</th>
+      <th>F24</th>
+      <th>F25</th>
+      <th>F26</th>
+      <th>F27</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f21 %></td>
+        <td><%= tracer.f22 %></td>
+        <td><%= tracer.f23 %></td>
+        <td><%= tracer.f24 %></td>
+        <td><%= tracer.f25 %></td>
+        <td><%= tracer.f26 %></td>
+        <td><%= tracer.f27 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F301</th>
+      <th>F302</th>
+      <th>F303</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f301 %></td>
+        <td><%= tracer.f302 %></td>
+        <td><%= tracer.f303 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F401</th>
+      <th>F402</th>
+      <th>F403</th>
+      <th>F404</th>
+      <th>F405</th>
+      <th>F406</th>
+      <th>F407</th>
+      <th>F408</th>
+      <th>F409</th>
+      <th>F410</th>
+      <th>F411</th>
+      <th>F412</th>
+      <th>F413</th>
+      <th>F414</th>
+      <th>F415</th>
+    </tr>
+  </thead>
+</table>
+</div>
+<div>
+<table>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f401 %></td>
+        <td><%= tracer.f402 %></td>
+        <td><%= tracer.f403 %></td>
+        <td><%= tracer.f404 %></td>
+        <td><%= tracer.f405 %></td>
+        <td><%= tracer.f406 %></td>
+        <td><%= tracer.f407 %></td>
+        <td><%= tracer.f408 %></td>
+        <td><%= tracer.f409 %></td>
+        <td><%= tracer.f410 %></td>
+        <td><%= tracer.f411 %></td>
+        <td><%= tracer.f412 %></td>
+        <td><%= tracer.f413 %></td>
+        <td><%= tracer.f414 %></td>
+        <td><%= tracer.f415 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F501</th>
+      <th>F502</th>
+      <th>F503</th>
+    </tr>
+  </thead>
+    <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f501 %></td>
+        <td><%= tracer.f502 %></td>
+        <td><%= tracer.f503 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F6</th>
+    </tr>
+  </thead>
+    <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f6 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F7</th>
+      <th>F7a</th>
+    </tr>
+  </thead>
+    <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f7 %></td>
+        <td><%= tracer.f7a %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F8</th>
+    </tr>
+  </thead>
+    <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f8 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F901</th>
+      <th>F902</th>
+      <th>F903</th>
+      <th>F904</th>
+      <th>F905</th>
+      <th>F906</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f901 %></td>
+        <td><%= tracer.f902 %></td>
+        <td><%= tracer.f903 %></td>
+        <td><%= tracer.f904 %></td>
+        <td><%= tracer.f905 %></td>
+        <td><%= tracer.f906 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F1001</th>
+      <th>F1002</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f1001 %></td>
+        <td><%= tracer.f1002 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F1101</th>
+      <th>F1102</th>
+    </tr>
+  </thead>
+    <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f1101 %></td>
+        <td><%= tracer.f1102 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F1201</th>
+      <th>F1202</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f1201 %></td>
+        <td><%= tracer.f1202 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F1301</th>
+      <th>F1302</th>
+      <th>F1303</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f1301 %></td>
+        <td><%= tracer.f1302 %></td>
+        <td><%= tracer.f1303 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F14</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f14 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F15</th>
+    </tr>
+  </thead>
+    <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f15 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table> 
+  <thead>
+    <tr>
+      <th>F1601</th>
+      <th>F1602</th>
+      <th>F1603</th>
+      <th>F1604</th>
+      <th>F1605</th>
+      <th>F1606</th>
+      <th>F1607</th>
+      <th>F1608</th>
+      <th>F1609</th>
+      <th>F1610</th>
+      <th>F1611</th>
+      <th>F1612</th>
+      <th>F1613</th>
+      <th>F1614</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f1601 %></td>
+        <td><%= tracer.f1602 %></td>
+        <td><%= tracer.f1603 %></td>
+        <td><%= tracer.f1604 %></td>
+        <td><%= tracer.f1605 %></td>
+        <td><%= tracer.f1606 %></td>
+        <td><%= tracer.f1607 %></td>
+        <td><%= tracer.f1608 %></td>
+        <td><%= tracer.f1609 %></td>
+        <td><%= tracer.f1610 %></td>
+        <td><%= tracer.f1611 %></td>
+        <td><%= tracer.f1612 %></td>
+        <td><%= tracer.f1613 %></td>
+        <td><%= tracer.f1614 %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>F1701</th>
+      <th>F1702b</th>
+      <th>F1703</th>
+      <th>F1704b</th>
+      <th>F1705</th>
+      <th>F1706b</th>
+      <th>F1705a</th>
+      <th>F1706ba</th>
+      <th>F1707</th>
+      <th>F178b</th>
+      <th>F1709</th>
+      <th>F1710b</th>
+      <th>F1711</th>
+      <th>F1712b</th>
+      <th>F1713</th>
+      <th>F1714b</th>
+      <th>F1715</th>
+      <th>F1716b</th>
+      <th>F1717</th>
+      <th>F1718b</th>
+      <th>F1719</th>
+      <th>F1720b</th>
+      <th>F1721</th>
+      <th>F1722b</th>
+      <th>F1723</th>
+      <th>F1724b</th>
+      <th>F1725</th>
+      <th>F1726b</th>
+      <th>F1727</th>
+      <th>F1728b</th>
+      <th>F1729</th>
+      <th>F1730b</th>
+      <th>F1731</th>
+      <th>F1732b</th>
+      <th>F1733</th>
+      <th>F1734b</th>
+      <th>F1735</th>
+      <th>F1736b</th>
+      <th>F1737</th>
+      <th>F1738b</th>
+      <th>F1737a</th>
+      <th>F1738ba</th>
+      <th>F1739</th>
+      <th>F1740b</th>
+      <th>F1741</th>
+      <th>F1742b</th>
+      <th>F1743</th>
+      <th>F1744b</th>
+      <th>F1745</th>
+      <th>F1746b</th>
+      <th>F1747</th>
+      <th>F1748b</th>
+      <th>F1749</th>
+      <th>F1750b</th>
+      <th>F1751</th>
+      <th>F1752b</th>
+      <th>F1753</th>
+      <th>F1754b</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracers.each do |tracer| %>
+      <tr>
+        <td><%= tracer.f1701 %></td>
+        <td><%= tracer.f1702b %></td>
+        <td><%= tracer.f1703 %></td>
+        <td><%= tracer.f1704b %></td>
+        <td><%= tracer.f1705 %></td>
+        <td><%= tracer.f1706b %></td>
+        <td><%= tracer.f1705a %></td>
+        <td><%= tracer.f1706ba %></td>
+        <td><%= tracer.f1707 %></td>
+        <td><%= tracer.f178b %></td>
+        <td><%= tracer.f1709 %></td>
+        <td><%= tracer.f1710b %></td>
+        <td><%= tracer.f1711 %></td>
+        <td><%= tracer.f1712b %></td>
+        <td><%= tracer.f1713 %></td>
+        <td><%= tracer.f1714b %></td>
+        <td><%= tracer.f1715 %></td>
+        <td><%= tracer.f1716b %></td>
+        <td><%= tracer.f1717 %></td>
+        <td><%= tracer.f1718b %></td>
+        <td><%= tracer.f1719 %></td>
+        <td><%= tracer.f1720b %></td>
+        <td><%= tracer.f1721 %></td>
+        <td><%= tracer.f1722b %></td>
+        <td><%= tracer.f1723 %></td>
+        <td><%= tracer.f1724b %></td>
+        <td><%= tracer.f1725 %></td>
+        <td><%= tracer.f1726b %></td>
+        <td><%= tracer.f1727 %></td>
+        <td><%= tracer.f1728b %></td>
+        <td><%= tracer.f1729 %></td>
+        <td><%= tracer.f1730b %></td>
+        <td><%= tracer.f1731 %></td>
+        <td><%= tracer.f1732b %></td>
+        <td><%= tracer.f1733 %></td>
+        <td><%= tracer.f1734b %></td>
+        <td><%= tracer.f1735 %></td>
+        <td><%= tracer.f1736b %></td>
+        <td><%= tracer.f1737 %></td>
+        <td><%= tracer.f1738b %></td>
+        <td><%= tracer.f1737a %></td>
+        <td><%= tracer.f1738ba %></td>
+        <td><%= tracer.f1739 %></td>
+        <td><%= tracer.f1740b %></td>
+        <td><%= tracer.f1741 %></td>
+        <td><%= tracer.f1742b %></td>
+        <td><%= tracer.f1743 %></td>
+        <td><%= tracer.f1744b %></td>
+        <td><%= tracer.f1745 %></td>
+        <td><%= tracer.f1746b %></td>
+        <td><%= tracer.f1747 %></td>
+        <td><%= tracer.f1748b %></td>
+        <td><%= tracer.f1749 %></td>
+        <td><%= tracer.f1750b %></td>
+        <td><%= tracer.f1751 %></td>
+        <td><%= tracer.f1752b %></td>
+        <td><%= tracer.f1753 %></td>
+        <td><%= tracer.f1754b %></td>
+        <td><%= link_to 'Show', tracer %></td>
+        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
+        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tracer', new_tracer_path %>
