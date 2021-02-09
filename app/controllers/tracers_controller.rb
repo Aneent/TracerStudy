@@ -6,7 +6,7 @@ class TracersController < ApplicationController
   # GET /tracers.json
   def index
     @tracers = Tracer.all
-    @data = Tracer.group(:f21, :f22, :f23, :f24, :f25, :f26, :f27 ).count
+
   end
 
   # GET /tracers/1

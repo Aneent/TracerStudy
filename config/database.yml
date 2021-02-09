@@ -20,9 +20,9 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: ec2-54-166-114-48.compute-1.amazonaws.com
-  username: ycnkjircnydouu
-  password: ad4d6f26e0c01e19084d244100a90a9a2f0de92ad56f69e7c1d6e4210f68799a
+  host: localhost
+  username: TracerStudy
+  password: TracerStudy
   port: 5432
   
 
@@ -87,5 +87,5 @@ test:
 production:
   <<: *default
   database: TracerStudy_production
-  username: ycnkjircnydouu
-  password: ad4d6f26e0c01e19084d244100a90a9a2f0de92ad56f69e7c1d6e4210f68799a
+  username: TracerStudy
+  password: TracerStudy

@@ -3,44 +3,39 @@
 <h1>Tracers</h1>
 
 
-<% @tracers.each do |tracer| %>
-<%= pie_chart @data %>
-<% end %>
+<% @tracers%>
+<%= column_chart [
+  {name: "Perkuliahan", data: Tracer.group(:f21).count},
+  {name: "Demonstrasi", data: Tracer.group(:f22).count},
+  {name: "Partisipasi dalam proyek riset", data: Tracer.group(:f23).count},
+  {name: "Magang", data: Tracer.group(:f24).count},
+  {name: "Praktikum", data: Tracer.group(:f25).count},
+  {name: "Kerja Lapangan", data: Tracer.group(:f26).count},
+  {name: "Diskusi", data: Tracer.group(:f27).count}
+], xtitle: "Menjawab", ytitle: "Jumlah", download: true, messages: {empty: "No data"}, legend: "right" %>
+<br>
+<%= pie_chart Tracer.group(:f301).count, donut: true, legend: "left" %>
+<%= pie_chart Tracer.group(:f302).count, donut: true, legend: "left" %>
+<%= pie_chart Tracer.group(:f303).count, donut: true, legend: "left" %>
 
-
-
-
-<div>
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">F21</th>
-      <th scope="col">F22</th>
-      <th scope="col">F23</th>
-      <th scope="col">F24</th>
-      <th scope="col">F25</th>
-      <th scope="col">F26</th>
-      <th scope="col">F27</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @tracers.each do |tracer| %>
-      <tr>
-        <td><%= tracer.f21 %></td>
-        <td><%= tracer.f22 %></td>
-        <td><%= tracer.f23 %></td>
-        <td><%= tracer.f24 %></td>
-        <td><%= tracer.f25 %></td>
-        <td><%= tracer.f26 %></td>
-        <td><%= tracer.f27 %></td>
-        <td><%= link_to 'Show', tracer %></td>
-        <td><%= link_to 'Edit', edit_tracer_path(tracer) %></td>
-        <td><%= link_to 'Destroy', tracer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-</div><br>
+<br>
+<%= column_chart [
+  {name: "Melalui iklan di koran/majalah, brosur ", data: Tracer.group(:f401).count},
+  {name: "Melamar ke perusahaan tanpa mengetahui lowongan yang ada", data: Tracer.group(:f402).count},
+  {name: "Pergi ke bursa/pameran kerja", data: Tracer.group(:f403).count},
+  {name: "Mencari lewat internet/iklan online/milis", data: Tracer.group(:f404).count},
+  {name: "Dihubungi oleh perusahaan ", data: Tracer.group(:f405).count},
+  {name: "Menghubungi Kemenakertrans ", data: Tracer.group(:f406).count},
+  {name: "Menghubungi agen tenaga kerja komersial/swasta ", data: Tracer.group(:f407).count},
+  {name: "Memeroleh informasi dari pusat/kantor pengembangan karir fakultas/universitas", data: Tracer.group(:f408).count},
+  {name: "Menghubungi kantor kemahasiswaan/hubungan alumni ", data: Tracer.group(:f409).count},
+  {name: "Membangun jejaring (<i>network</i>) sejak masih kuliah", data: Tracer.group(:f410).count},
+  {name: "Melalui relasi (misalnya dosen, orang tua, saudara, teman, dll.)", data: Tracer.group(:f411).count},
+  {name: "Membangun bisnis sendiri ", data: Tracer.group(:f412).count},
+  {name: "Melalui penempatan kerja atau magang", data: Tracer.group(:f413).count},
+  {name: "Bekerja di tempat yang sama dengan tempat kerja semasa kuliah", data: Tracer.group(:f414).count},
+  {name: "Lainnya", data: Tracer.group(:f415).count},
+], xtitle: "Jumlah", ytitle: "Menjawab", download: true, messages: {empty: "No data"}, legend: "right" %>
 
 <div>
 <table class="table table-bordered">
